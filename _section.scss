@@ -1,0 +1,13 @@
+.first-section {
+
+    .section-content {
+
+        @include laptop{
+            margin:20px;
+        }
+        p {
+            @include letter(0.78px);
+            @extend %primary-color;
+        }
+    }
+}

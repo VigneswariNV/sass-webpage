@@ -1,0 +1,77 @@
+header {
+    background-image: url("https://res.cloudinary.com/dv6yy7usv/image/upload/v1613388105/iphone_xjxih0.png"), linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    @include laptop{
+        background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
+        padding:10px 20px 40px 10px !important;
+       
+    }
+
+    .sidenav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top:250px;
+        display:none;
+        opacity:1;
+        @include laptop{
+            display:inline-block;
+            text-align:center;
+        }
+      }
+.span{
+        font-size:26px;
+        cursor:pointer;
+        color:$third-color;
+        display:none;
+        padding:0;
+        @include laptop{
+            display:block;
+        }
+}
+.sidenav a {
+        color:$third-color;
+        display: none;
+        transition: 0.1s;
+        @include laptop{
+            display:block;
+        }
+}
+.sidenav a:hover{
+    color:$white;
+}
+.sidenav .closebtn {
+        position: absolute;
+        top: -10px;
+        right: 5px;
+        font-size: 36px;
+}
+    
+.header-content {
+        margin-top: 180px;
+        width: 560px;
+        @include laptop{
+            text-align:center;
+            width:100%;
+            margin-top:50px;
+        }
+    }
+ul{
+    @include laptop{
+        display:none;
+    }
+}
+li{
+    @include laptop{
+        display:none;
+    }
+
+}
+}

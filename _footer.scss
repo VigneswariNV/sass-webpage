@@ -1,0 +1,22 @@
+footer {
+    background-color: $third-color;
+
+    ul {
+        li{
+            @include laptop{
+                display:block !important;
+                margin-top:5px;
+            }
+            a {
+                color: $white;
+                @include laptop{
+                    margin-right:0 !important;
+                }
+        }
+    }
+
+    p {
+        color: $fourth-color;
+    }
+}
+}

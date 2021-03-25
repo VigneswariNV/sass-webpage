@@ -1,0 +1,87 @@
+
+.container {
+    max-width: 1440px;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.float-right {
+    float: right;
+}
+
+.display-ib {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-left {
+    text-align: left;
+}
+.border-n{
+    border:none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@for $space from 1 through 10{
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .ml-#{$space} {
+      margin-left: #{$space}rem ;
+      
+  }
+  .mr-#{$space}{
+    margin-right:#{$space}rem;
+  }
+  .mt-#{$space}{
+      margin-top:#{$space}rem ;
+  }
+  .mb-#{$space}{
+      margin-bottom:#{$space}rem;
+  }
+
+  .p-#{$space} {
+      padding:#{$space}rem;
+  }
+  .pt-#{$space} {
+      padding-top:#{$space}rem ;
+  }
+  .pb-#{$space}{
+      padding-bottom:#{$space}rem;
+  }
+  .pl-#{$space}{
+    padding-left:#{$space}rem ;
+    }
+  .pr-#{$space}{
+    padding-right:#{$space}rem;
+  }
+  
+}
+
+@mixin border($color,$pattern,$width){
+    border:$width $pattern $color;
+}
+@mixin borderradius($radius){
+    border-radius:$radius;
+}
+@mixin letter($value){
+    letter-spacing:$value;
+}
+
+@mixin laptop {
+	@media screen and (max-width:1180px) {
+	  @content;
+	}
+  }

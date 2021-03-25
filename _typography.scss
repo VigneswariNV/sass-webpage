@@ -1,0 +1,61 @@
+%primary-color {
+    color: $primary-color;
+}
+
+.font {
+    letter-spacing: 0.65px;
+    color: $black;
+}
+
+.input-font {
+    opacity: 0.19;
+    letter-spacing: 0.52px;
+    @extend %primary-color;
+}
+
+.footer-font {
+    letter-spacing: 0.19px;
+}
+
+.button-font {
+    letter-spacing: 0.63px;
+    color: $white;
+}
+.font{
+    &-weight-s{
+        font-weight: 300;
+    }
+    &-weight-m{
+        font-weight: 600;
+    }
+    &-weight-l{
+        font-weight:900;
+    }
+}
+.heading {
+    font-size: 40px;
+    color: $black;
+    letter-spacing: 1.04px;
+    
+    &-titlex{
+        letter-spacing: 1.23px;
+        @extend %primary-color;
+    }
+    &-titlexl{
+        font-size: 50px;
+        line-height: 1.1;
+        letter-spacing: 1.3px;
+        @extend %primary-color;
+    }
+    &-titlexm{
+        font-size: 30px;
+        letter-spacing: 0.92px;
+        color: $secondary-color;
+    }
+    &-titles{
+        font-size:20px;
+    }
+    &-titlesm{
+        font-size:25px;
+    }
+}

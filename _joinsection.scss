@@ -1,0 +1,31 @@
+.third-section {
+    padding: 60px 0 115px 0;
+
+    .inner-content {
+        width: 720px;
+        margin: auto;
+
+        @include laptop{
+            width:100%;
+        }
+
+        form {
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.11);
+            @include laptop{
+                margin-top:10px !important;
+                margin-right:0 !important;
+            }
+
+            input {
+                padding: 21px 100px 24px 29px;
+                width: 300px;
+                border: none;
+                @include laptop{
+                    width:80%;
+                    padding: 21px 40px 24px 29px;
+                    
+                }
+            }
+        }
+    }
+}

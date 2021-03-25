@@ -1,0 +1,30 @@
+.second-section {
+    background-image: linear-gradient(#fceb6f 1%, #fede60 1%);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 15%;
+    @include laptop{
+        padding:10px 20px;
+    }
+
+    img{
+        @include laptop{
+            width:100%;
+        }
+    }
+
+    .content {
+        width: 620px;
+        padding-top: 120px;
+        @include laptop{
+            width:100%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 22px;
+            @include letter(0.68px);
+            @extend %primary-color;
+        }
+    }
+}
